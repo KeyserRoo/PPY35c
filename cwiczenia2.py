@@ -98,6 +98,31 @@ def zadanie3p2():
         print("nie ma rozwiazan")
         return
     
+def zadanie4():
+    x = int(0)
+    while x<11:
+        print("y = ",3*x)
+        x+=1
+    
+    for i in range(11):
+        print("y = ",3*i)
+
+def zadanie5():
+    for item1 in range(1,101):
+        for item2 in range(1,101):
+            print(item1, " * ",item2," : ",item1*item2)
+            
+def zadanie6():
+    liczba=0
+    for item in range(1000,10000):
+        if (m.pow(item%100,2)+m.pow(item-(item%100),2)) == item:
+            print(item)
+            liczba+=1
+    print("jest ",liczba," takich liczb")
+
+    
+# def zadanie7():
+    
     
     
     
@@ -106,8 +131,11 @@ def main():
     # zadanie1()
     # zadanie2()
     # zadanie3p1()
-    zadanie3p2()
-    
+    # zadanie3p2()
+    # zadanie4()
+    # zadanie5()
+    zadanie6()
+    # zadanie7()
     
 if __name__ == '__main__':
     main()
